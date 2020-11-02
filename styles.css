@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: #eee5de;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.portfolio-card {
+  border-radius: 3px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25vh;  
+}
+
+.portfolio-card img {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  margin-right: 50px;
+  box-shadow: 2px 0px 3px rgba(56, 56, 56, 0.15);
+}
+
+.portfolio-card img:hover {
+  opacity: 0.5;
+  transition: .5s;
+}
+
+.portfolio-card-text {
+  width: 40%;
+  text-transform: lowercase;
+  color: #8b8682;
+}
+
+.portfolio-card-text:hover {
+  color: #545454;
+  transition: 0.5s;
+}
+
+.portfolio-card-text h1 {
+  padding: 7px;
+  font-size: 47px;
+  text-align: end;
+  border-bottom: 4px solid #8b8682;
+}
+
+.portfolio-card-text-about-me {
+  padding-top: 25px;
+  font-size: 18px;
+}
+
+.portfolio-card-text-skills-title{
+  font-size: 21px;
+  font-weight: 900px;
+  padding-top: 15px;
+  color: #8b3e2f;
+  text-transform: uppercase;
+}
+
+.portfolio-card-text-skills-content{
+  font-size: 21px;
+  font-weight: 900px;
+  padding-top: 10px;
+  color: #4a708b;
+}
+
+.portfolio-social{
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.portfolio-card-social-medias-title {
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  width: 30%;
+  padding: 7px;
+  color: white;
+  background-color: #cdc5bf;
+  border-radius: 50px 5px;
+  box-shadow: 2px 0px 3px rgba(56, 56, 56, 0.15);
+}
+
+.portfolio-card-social-medias-title:hover {
+  transition: 0.5s;
+  background: linear-gradient(
+    90deg,
+    rgba(205, 197, 191, 1) 0%,
+    rgba(106, 106, 106, 1) 50%
+  );
+}
+
+.portfolio-card-social-medias {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;  
+}
+
+.portfolio-card-social-medias a {
+  font-size: 30px;  
+  padding:25px 6px;
+  color: #8b8386;
+}
+
+.portfolio-card-social-medias a:hover {
+  font-size: 35px;
+  padding-left: 12px;
+  color: black;
+  transition: 0.5s;
+}
+
+.portfolio-mail-side {
+  margin-top: 2vh;
+}
+
+.please-write-me {
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  padding: 7px;
+  color: #8b3e2f;
+  border-bottom: 2px solid #cdc5bf;
+  margin-bottom: 15px;
+}
+
+.please-write-me-gmail a {
+  font-size: 25;
+  font-weight: 600;
+  text-align: center;
+  padding: 7px;  
+  color: #8b3e2f;
+}
+
+.please-write-me-gmail a:hover {
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 5vh;  
+  }
+
+  .portfolio-social{
+    min-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+  }
+  .portfolio-card-social-medias-title{
+    min-width: 50%;
+    margin-top: 5vh;
+  }
+
+  .portfolio-card img {
+    margin:0px;
+  }
+  .portfolio-card-text {
+    width: 80%;
+    text-align: center;
+  }
+  .portfolio-card-text h1 {
+    text-align: center;
+    font-size: 32px;
+  }
+
+  .please-write-me-gmail {
+    margin-bottom: 15px;
+  }
+}
