@@ -1,11 +1,13 @@
 import React from 'react'
-import pp from '../../public/assets/pp.jpg'
+
+import pp from 'assets/pp.jpg'
 import Image from 'next/image'
 import { FiMapPin, FiMail, FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
 
 function Card() {
+
     return (
-        <div className='lg:fixed md:relative w-[300px] p-10 h-min rounded-3xl border-solid border-2 border-gray-700'>
+        <div className='lg:fixed md:relative w-100 mb-12 lg:mb-0 lg:w-[300px] p-10 h-min rounded-3xl border-solid border-2 border-gray-700'>
             <Image className='rounded-xl w-full h-88 object-cover' src={pp} alt="Profile Picture" />
             <div className='flex flex-col items-center mt-3'>
                 <p className='flex text-white text-center mt-2'><FiMail className='mr-2' size={24} color='#5D00FF' />gizemgk654@gmail.com</p>

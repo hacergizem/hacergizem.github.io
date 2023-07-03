@@ -1,15 +1,13 @@
 import React from 'react'
-import Image from 'next/image'
 
-
-import Javascript from '../../public/assets/javascript.svg'
-import Typescript from '../../public/assets/typescript.svg'
-import ReactIcon from '../../public/assets/react.svg'
-import Tailwind from '../../public/assets/tailwind-css.svg'
-import Sass from '../../public/assets/sass.svg'
-import Next from '../../public/assets/nextjs.svg'
-import Vue from '../../public/assets/vuejs.svg'
-import Git from '../../public/assets/git.svg'
+import Javascript from 'assets/javascript.svg'
+import Typescript from 'assets/typescript.svg'
+import ReactIcon from 'assets/react.svg'
+import Tailwind from 'assets/tailwind-css.svg'
+import Sass from 'assets/sass.svg'
+import Next from 'assets/nextjs.svg'
+import Vue from 'assets/vuejs.svg'
+import Git from 'assets/git.svg'
 
 function Skills() {
     return (
@@ -25,7 +23,6 @@ function Skills() {
                 <Tailwind width={34} height={34} />
                 <Sass width={34} height={34} />
             </div>
-
         </div>
     )
 }

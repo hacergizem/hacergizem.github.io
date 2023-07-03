@@ -6,7 +6,7 @@ import Timeline from "./components/Timeline";
 export default function Home() {
   return (
     <div className="flex justify-center py-10 lg:px-0 sm:px-10 bg-gradient-to-r from-slate-900 to-slate-800">
-      <div className="relative container flex flex-col lg:flex-row">
+      <div className="relative p-10 lg:p-0 container flex flex-col lg:flex-row">
         <Card />
         <div className="ml-0 lg:ml-[340px]">
           <Description />
@@ -15,6 +15,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-
   )
 }
