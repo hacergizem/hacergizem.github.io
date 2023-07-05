@@ -1,5 +1,7 @@
+'use client';
 import Card from "./components/Card";
 import Description from "./components/Description";
+import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Timeline from "./components/Timeline";
 
@@ -11,6 +13,7 @@ export default function Home() {
         <div className="ml-0 lg:ml-[340px]">
           <Description />
           <Skills />
+          <Projects />
           <Timeline />
         </div>
       </div>

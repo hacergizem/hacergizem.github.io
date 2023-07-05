@@ -39,15 +39,16 @@ function Timeline() {
     return (
         <div>
             <p className='text-white text-xl font-semibold'>Experience</p>
-            <ol className="relative mt-5 border-l border-gray-200 dark:border-gray-700">
+            <ol className="relative  mt-5 border-l border-gray-200 dark:border-gray-700">
                 {experiences.map((experience, index) => {
                     return (
                         <li className="mb-10 ml-4" key={index}>
                             <div className="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -left-1.5"></div>
-                            <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                            <p className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                                 {experience.date}
-                            </time>
-                            <h2 className="text-xl text-secondary font-semibold text-gray-900">
+                            </p>
+                            <h2
+                                className="text-xl text-secondary font-semibold text-gray-900">
                                 {experience.title}
                             </h2>
                             <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
