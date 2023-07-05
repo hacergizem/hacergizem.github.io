@@ -42,7 +42,7 @@ function Projects() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     {items.map((item) => (
                         <motion.div
-                            className={`card rounded-lg shadow-md cursor-pointer transform transition-transform duration-500 hover:scale-105 ${selectedId === item.id ? 'card-selected' : ''
+                            className={`card rounded-lg cursor-pointer transform transition-transform duration-500 hover:scale-105 ${selectedId === item.id ? 'card-selected' : ''
                                 }`}
                             layoutId={`card-container-${item.id}`}
                             onClick={() => setSelectedId(item.id)}
@@ -52,7 +52,7 @@ function Projects() {
                             transition={{ duration: 0 }}
                         >
                             <div className="max-w-sm rounded-xl bg-slate-900 overflow-hidden">
-                                <img src={item.img} className='h-[125px] object-cover' />
+                                <img src={item.img} className='h-[125px] object-cover w-full' />
                                 <motion.h2 className="text-lg font-bold p-3 text-primary">{item.title}</motion.h2>
                             </div>
                         </motion.div>
@@ -72,7 +72,7 @@ function Projects() {
                             {items.map((item) => (
                                 item.id === selectedId && (
                                     <motion.div
-                                        className="shadow-lg bg-slate-900 overflow-hidden rounded-lg shadow-md max-w-lg mx-auto"
+                                        className="shadow-lg lg:w-full w-10/12 bg-slate-900 overflow-hidden rounded-lg shadow-md max-w-lg mx-auto"
                                         layoutId={`card-container-${item.id}`}
                                         key={item.id}
                                         initial={{ opacity: 0 }}
